@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">  
+        <link rel="funcional" href="main.js">
     </head>
 
     <body>
@@ -28,28 +29,38 @@
 
             <div class="advertencia">
                 <img src="assets_icons/Exclamacion.png" alt="Simbolo de Exclamacion">
-                Solo letras minúsculas y sin acentos
+                <p>Solo letras minúsculas y sin acentos</p>
             </div>
 
 
             <div class="botones">
-                <button class="boton-encriptar">Encriptar</button>
-                <button class="boton-desencriptar">Desencriptar</button>
+                <button  type="button" class="boton-encriptar" onclick="bottonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="bottonDesencriptar()">Desencriptar</button>
             </div>
 
             <div class="rectangulo">
             </div>
-            <img src="assets_icons/Muñeco.png" alt="Imagen de una persona" class="munehco">
+            <img src="assets_icons/Muñeco.png" alt="Imagen de una persona" class="munehco" id="munehco">
 
-            <div class="mensaje-inencontrado">
+            <div class="mensaje-inencontrado" id="mensaje-inencontrado">
                 <p class="ningun-mensaje">Ningun mensaje fue encontrado</p>
                 <p class="ingrese-mensaje">Ingrese el texto que desees encriptar o desencriptar</p>
             </div>
+
+            <div class="resultado-mensaje">
+                <p id="mensaje-generado"></p>
+            </div>
+            <button type="button" class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
         </main>
 
         <footer>
-
+            <p>hola</p>
         </footer>
+
+        <script src="main.js">
+
+        </script>
     </body>
+
 
 </html>
