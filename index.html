@@ -12,7 +12,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">  
-        <link rel="funcional" href="main.js">
     </head>
 
     <body>
@@ -24,7 +23,7 @@
         <main>
 
             <div class="ingrese-texto">
-                <textarea name="mensaje" class="mensaje" id="mensaje" cols="20" rows="1" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea name="mensaje" class="mensaje" id="mensaje" cols="20" rows="1" placeholder="Ingrese el texto aqui" required></textarea>
             </div>
 
             <div class="advertencia">
@@ -34,12 +33,12 @@
 
 
             <div class="botones">
-                <button  type="button" class="boton-encriptar" onclick="bottonEncriptar()">Encriptar</button>
-                <button class="boton-desencriptar" onclick="bottonDesencriptar()">Desencriptar</button>
+                <button  type="button" class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
             </div>
 
-            <div class="rectangulo">
-            </div>
+            <div class="rectangulo"></div>
+            
             <img src="assets_icons/Muñeco.png" alt="Imagen de una persona" class="munehco" id="munehco">
 
             <div class="mensaje-inencontrado" id="mensaje-inencontrado">
@@ -54,13 +53,19 @@
         </main>
 
         <footer>
-            <p>hola</p>
+            <h4 class="texto-redes">Mis redes sociales</h4>
+            <div class="iconos-redes">
+                <a href="https://www.instagram.com/fabricio_porras6/"><img class="icono" src="assets_icons/instagram.png" alt="Icono de instagram"></a>
+                <a href="https://www.linkedin.com/in/fabricio-alexander-porras-morera-8380bb210/"><img class="icono" src="assets_icons/linkedlin.png" alt="Icono de linkedlin"></a>
+                <a href="https://github.com/Fabricio06"><img class="icono" src="assets_icons/github.png" alt="Icono de github"></a>
+                <a href="faporras05@hotmail.com"><img class="icono" src="assets_icons/correo.png" alt="Icono de correo electronico"></a>
+            </div>
+            <h4 class="copyright">©FabricioPorrasMorera</h4>
+            
         </footer>
 
-        <script src="main.js">
+        <script src="main.js"></script>
 
-        </script>
     </body>
-
 
 </html>

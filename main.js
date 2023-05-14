@@ -1,4 +1,4 @@
-function bottonEncriptar(){
+function botonEncriptar(){
     let mensaje = document.getElementById("mensaje").value;
 
     const valido = /^[a-zñ\s\¿\?\¡\!\,\.]+$/;
@@ -12,7 +12,7 @@ function bottonEncriptar(){
     }
 }
 
-function bottonDesencriptar(){
+function botonDesencriptar(){
     let mensaje = document.getElementById("mensaje").value;
 
     const valido = /^[a-zñ\s\¿\?\¡\!\,\.]+$/;
