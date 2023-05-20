@@ -275,7 +275,7 @@ footer{
     .ingrese-texto{
         position: initial;
         padding: 50px;
-        width: 90%;
+        width: auto;
     }
     .mensaje{
         height: 450px;
