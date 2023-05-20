@@ -37,19 +37,22 @@
                 <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
             </div>
 
-            <div class="rectangulo"></div>
+            <div class="rectangulo">
+                <img src="assets_icons/Muñeco.png" alt="Imagen de una persona" class="munehco" id="munehco">
+
+                <div class="mensaje-inencontrado" id="mensaje-inencontrado">
+                    <p class="ningun-mensaje">Ningun mensaje fue encontrado</p>
+                    <p class="ingrese-mensaje">Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+    
+                <div class="resultado-mensaje">
+                    <p id="mensaje-generado"></p>
+                </div>
+
+                <button type="button" class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
+            </div>
             
-            <img src="assets_icons/Muñeco.png" alt="Imagen de una persona" class="munehco" id="munehco">
 
-            <div class="mensaje-inencontrado" id="mensaje-inencontrado">
-                <p class="ningun-mensaje">Ningun mensaje fue encontrado</p>
-                <p class="ingrese-mensaje">Ingrese el texto que desees encriptar o desencriptar</p>
-            </div>
-
-            <div class="resultado-mensaje">
-                <p id="mensaje-generado"></p>
-            </div>
-            <button type="button" class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
         </main>
 
         <footer>

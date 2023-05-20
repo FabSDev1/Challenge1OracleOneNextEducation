@@ -1,6 +1,5 @@
 *{
     font-family: 'Inter';
-    outline: red dashed 1px;
 }
 
 /*Body de la pagina*/
@@ -10,12 +9,12 @@ body{
 
 /*Inicio del main de la pagina*/
 main{
-    height: 54em;
+    height: 57em;
 }
 
 /*Parte del Header de la pagina*/
 .logo{
-    padding:  2.78%; 
+    padding:  2.78%;
 }
 
 /*Parte del main de la pagina*/
@@ -95,16 +94,16 @@ main{
     background: #356EA9;
 }
 
+
 .boton-desencriptar:hover{
     background: #EFF1FA;
 }
 
 .rectangulo{
-    position: absolute;
+    position: sticky;
     width: 400px;
-    height: 860px;
+    height: 724px;
     left: 1000px;
-    top: 40px;
 
     /* White */
 
@@ -116,19 +115,19 @@ main{
 }
 
 .munehco{
-    position: absolute;
+    position: static;
     width: 336px;
     height: 304px;
-    left: 1032px;
-    top: 283px;
+    padding: 30px;
+    margin: 60px 0 0;
 }
 
 .mensaje-inencontrado{
-    position: absolute;
-    width: 336px;
-    height: 122px;
-    left: 1032px;
-    top: 619px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 50px;
 }
 
 .ningun-mensaje{
@@ -167,11 +166,10 @@ main{
 
 
 .resultado-mensaje{
-    position: absolute;
+    position: static;
+    display: none;
     width: 336px;
-    height: 741px;
-    left: 1032px;
-    top: 72px;
+    height: 80%;
 
     font-family: 'Inter';
     font-style: normal;
@@ -181,7 +179,7 @@ main{
     /* or 36px */
 
     overflow: auto;
-    padding: 5px;
+    padding: 8px 0 0 29px;
     word-wrap: break-word;
     /* Gray/gray-400 */
 
@@ -199,11 +197,12 @@ main{
     /* Button */
     box-sizing: border-box;
     display: none;
-    position: absolute;
+    position: static;
     width: 336px;
     height: 67px;
     left: 1032px;
     top: 825px;
+    margin: 30px;
 
     /* Dark blue/dark-blue-300 */
 
@@ -214,6 +213,7 @@ main{
 .boton-copiar:hover{
     background: #D8DFE8;
 }
+
 
 /*Parte del footer de la pagina*/
 
@@ -255,85 +255,120 @@ footer{
     font-size: 15px;
 }
 
-
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1400px) {
     .ingrese-texto{
-        left: 40px;
-        top: 150px;
+        left: 139px;
+        width: 50%;
+    }
+    .mensaje{
+        width: 100%;
+    }
+    .advertencia{
+        left: 140px;
+    }
+    .botones{
+        left: 63px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .ingrese-texto{
+        position: initial;
+        padding: 50px;
+        width: 90%;
+    }
+    .mensaje{
+        height: 450px;
+        width: 90%;
     }
     .advertencia{
         height: 18px;
         width: 304px;
-        left: 40px;
-        top: 610px;
         border-radius: 0px;
-    }
-    .mensaje{
-        height: 450px;
+        position: initial;
+        padding: 20px 30px 0px 23px;
     }
     .botones{
         height: 67px;
-        width: 688px;
-        left: 40px;
-        top: 630px;
+        width: auto;
         border-radius: 0px;
+        position: initial;
+        display: table;
+        padding: 0 30px;
+        margin-bottom: 10px;
     }
     .munehco{
         display: none;
     }
     .rectangulo{
-        height: 153px;
-        width: 650px;
-        left: 1em;
-        top: 740px;
-        border-radius: 32px;
-        padding: 32px;
+        height: 123px;
+        width: auto;
+        position: initial;
+        display: flex;
+        padding: 40px;
     }
     .mensaje-inencontrado{
-        
-        height: 105px;
-        width: 300px;
-        left: 250px;
-        top: 790px;
-        border-radius: 0px;
-        padding: 0px;     
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;  
+        margin-top: 0%;  
     }
     .resultado-mensaje{
-        height: 133px;
-        width: 650px;
-        left: 2%;
-        top: 740px;
+        height: auto;
+        width: 70%;
         border-radius: 32px;
-        padding: 32px;      
+        padding: 7px;     
     }
     #mensaje-generado {
-        width: 655px;
-        height: 115px;
-    }
-    .boton-copiar{
-        left: 30%;
-        top: 890px;
+        width: auto;
+        height: auto;
     }
 }
-
-@media screen and (max-width: 375px){
-    .mensaje{
-        width: 400px;
+@media screen and (max-width: 761px) {
+    main{
+        height: 64em;
     }
-    .boton-encriptar{
-        display: block;
-        margin: 0 0 24px 0;
+    .boton-desencriptar{
+        margin: 10px 0 10px 0;
     }
     .rectangulo{
-        position: absolute;
-        width: 327px;
-        height: 186px;
-        left: 24px;
-        top: 1100px;
+        height: 88px;
+        top: 770px;
     }
-    .mensaje-inencontrado{
-        left: 10%;
-        top: 1120px;
-    }    
+    .resultado-mensaje{
+        width: 70%;
+        height: 100%;
+    }
+    footer{
+        position: relative;
+    }
+
+}
+@media screen and (max-width: 375px){
+    main{
+        height: 64em;
+    }
+    .ingrese-texto{
+        padding: initial;
+        padding-left: 30px;
+    }
+    .advertencia{
+        padding: 0;
+    }
+    .botones{
+        padding: 0 5px;
+        display: contents;
+    }
+    .rectangulo{
+        height: 226px;
+        display: block;
+        width: auto;
+    }
+    .resultado-mensaje{
+        height: 60%;
+        width: auto;
+    }
+    .boton-copiar{
+        width: 70%;
+    }
 }

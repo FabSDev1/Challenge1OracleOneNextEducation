@@ -1,6 +1,7 @@
 function botonEncriptar(){
     let mensaje = document.getElementById("mensaje").value;
-
+    let elemento = document.getElementsByClassName('resultado-mensaje')[0];
+    elemento.style.display = 'block';
     const valido = /^[a-zñ\s\¿\?\¡\!\,\.]+$/;
     
     if(valido.test(mensaje)){ 
@@ -14,7 +15,8 @@ function botonEncriptar(){
 
 function botonDesencriptar(){
     let mensaje = document.getElementById("mensaje").value;
-
+    let elemento = document.getElementsByClassName('resultado-mensaje')[0];
+    elemento.style.display = 'block';
     const valido = /^[a-zñ\s\¿\?\¡\!\,\.]+$/;
     
     if(valido.test(mensaje)){ 
